@@ -15,4 +15,5 @@ RUN npm install --omit=dev && npm cache clean --force
 
 COPY --from=builder /app/serverside/dist ./dist
 
+EXPOSE 8080
 CMD npm run start

@@ -15,4 +15,5 @@ COPY --from=builder /app .
 #COPY --from=builder /app/.next/static ./.next/static
 RUN npm install --omit=dev && npm cache clean --force
 
+EXPOSE 8080
 CMD ["./node_modules/next/dist/bin/next", "start"]

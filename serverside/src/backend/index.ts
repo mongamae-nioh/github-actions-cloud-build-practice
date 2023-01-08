@@ -8,6 +8,6 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use("/messages", messageController)
 
-app.listen(3001, () => {
-    console.log('launch express 3001 port')
+app.listen(8080, () => {
+    console.log('launch express 8080 port')
 })
