@@ -1,7 +1,6 @@
 name: frontend unit test
 
-on:
-  push: [push]
+on: [push]
 #    paths:
 #      - "frontend"
 
