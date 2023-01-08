@@ -1,4 +1,4 @@
-name: frontend unit test
+name: serverside unit test
 
 on: [push]
 #    paths:
@@ -10,7 +10,7 @@ defaults:
     working-directory: serverside
     
 jobs:
-  frontend-unit-test:
+  serverside-unit-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
