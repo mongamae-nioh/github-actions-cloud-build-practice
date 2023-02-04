@@ -1,7 +1,7 @@
 import express from "express";
 import messageController from "./controllers/message";
 
-console.log("launch server side!");
+console.log("launch server side");
 
 const app: express.Express = express();
 
