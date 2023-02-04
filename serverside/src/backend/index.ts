@@ -1,7 +1,7 @@
 import express from "express";
 import messageController from "./controllers/message";
 
-console.log("create develop branch!");
+console.log("create develop branch");
 
 const app: express.Express = express();
 
