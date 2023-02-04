@@ -1,13 +1,15 @@
-import express from 'express'
-import messageController from './controllers/message'
+import express from "express";
+import messageController from "./controllers/message";
 
-const app: express.Express = express()
+console.log("launch server side");
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+const app: express.Express = express();
 
-app.use("/messages", messageController)
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use("/messages", messageController);
 
 app.listen(8080, () => {
-    console.log('launch express 8080 port')
-})
+  console.log("launch express 8080 port");
+});
